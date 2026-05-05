@@ -6,6 +6,8 @@
 <title>Faceless Cash Flow</title>
 
 <style>
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -31,7 +33,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 45px;
+  margin-top: 50px;
   color: #FFD700;
 }
 
@@ -44,12 +46,6 @@ p {
 .hero-text {
   max-width: 700px;
   margin: 0 auto;
-}
-
-.early-access {
-  color: #FFD700;
-  font-weight: bold;
-  margin-top: 20px;
 }
 
 .btn {
@@ -87,10 +83,6 @@ p {
   margin-bottom: 15px;
 }
 
-.screenshots {
-  margin-top: 20px;
-}
-
 .screenshots img {
   width: 340px;
   max-width: 90%;
@@ -115,12 +107,14 @@ p {
   border: 1px solid rgba(255, 215, 0, 0.15);
 }
 
-.card h3 {
-  color: white;
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 0.8s ease forwards;
 }
 
-.card p {
-  font-size: 16px;
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .footer {
@@ -130,9 +124,7 @@ p {
 }
 
 @media (max-width: 700px) {
-  h1 {
-    font-size: 34px;
-  }
+  h1 { font-size: 34px; }
 
   .btn {
     display: block;
@@ -145,7 +137,15 @@ p {
 
 <body>
 
-<div class="container">
+<!-- 🔥 STICKY BAR -->
+<div style="position:sticky; top:0; background:#000; padding:10px; border-bottom:1px solid #222; z-index:999;">
+  <a href="https://play.google.com/apps/testing/com.cambridgeproductsdivision.facelesscashflow"
+     style="color:#00C853; font-weight:bold; text-decoration:none;">
+    🚀 Join Early Access
+  </a>
+</div>
+
+<div class="container fade-in">
 
   <img class="logo-img" src="https://raw.githubusercontent.com/goldnblackboy-afk/faceless-cash-flow-landing/main/logo.png">
 
@@ -161,7 +161,9 @@ p {
     Track every dollar. Stay consistent. Grow your income streams.
   </p>
 
-  <p class="early-access">Limited early access — join testing now</p>
+  <p style="color:#FFD700; font-weight:bold;">
+    Limited early access — join testing now
+  </p>
 
   <a class="btn green" href="https://play.google.com/apps/testing/com.cambridgeproductsdivision.facelesscashflow">
     Join Testing
@@ -180,6 +182,13 @@ p {
     <img src="https://raw.githubusercontent.com/goldnblackboy-afk/faceless-cash-flow-landing/main/Screenshot7.png">
   </div>
 
+  <!-- SOCIAL PROOF -->
+  <h2>Early Users Are Loving It</h2>
+
+  <p>"Finally a simple way to track all my income streams in one place."</p>
+  <p>"Helped me stay consistent with my side hustle."</p>
+
+  <!-- FEATURES -->
   <h2>Features</h2>
 
   <div class="features">
@@ -191,33 +200,37 @@ p {
 
     <div class="card">
       <h3>Track Expenses</h3>
-      <p>Know where your money is going and protect your profit.</p>
+      <p>Know where your money is going.</p>
     </div>
 
     <div class="card">
       <h3>AI Money Ideas</h3>
-      <p>Get daily ideas to make more money and start tracking them.</p>
+      <p>Get daily ideas to make more money.</p>
     </div>
 
     <div class="card">
       <h3>Set Goals</h3>
-      <p>Track your progress and stay motivated every month.</p>
+      <p>Track your progress and stay motivated.</p>
     </div>
 
   </div>
 
-  <h2>Built For</h2>
+  <!-- URGENCY -->
+  <h2>Limited Access</h2>
 
-  <p>Creators • Hustlers • Freelancers • Entrepreneurs</p>
+  <p style="color:#FFD700;">
+    Only early users get access before full release.
+  </p>
 
-  <h2>Start Building Your Cash Flow Today</h2>
+  <!-- FINAL CTA -->
+  <h2>Start Tracking Your Money Today</h2>
 
   <a class="btn green" href="https://play.google.com/apps/testing/com.cambridgeproductsdivision.facelesscashflow">
-    Get Early Access
+    Join Early Access Now
   </a>
 
   <p class="footer">
-    Faceless Cash Flow is a tracking and estimation tool only.
+    Faceless Cash Flow is a tracking tool only.
   </p>
 
 </div>
